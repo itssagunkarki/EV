@@ -1,0 +1,19 @@
+Using plotly:
+
+Sankey diagram:
+left side is current vehicles (there could be 6, so you'll have to set vehicle = vehicle 1 code, then append vehicle = vehicle2 code, vehicle=vehicle 3 code, etc.
+right side is stated preference (SP) choice: there are 6 responses for each person, so you'd have to append 6 records for each with stated preference response = response 1, then resonse 2, then response 3, etc.
+middle? We could also include the vehicle they say they will buy next as a column in the middle
+
+Next vehicle choice by household size - possibly as a stacked bar chart
+
+Off-road driving frequency by occupation?
+
+Off-road driving frequency by next vehicle purchase type
+
+Time to next vehicle purchase and next vehicle fuel type
+
+Charging at residence as pie chart or bar chart
+
+
+
