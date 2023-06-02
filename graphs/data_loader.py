@@ -99,6 +99,9 @@ parking_dict = {
     "bev_dwell_7": "No dedicated parking facility"
 }
 
+sp_dict = {1: "Small ICE", 2: "Small BEV", 3: "Large ICE", 4: "Large BEV", 5:"Pickup truck ICE", 6: "Pickup truck BEV"}
+
+
 
 geo_edf.loc[:, 'hh_size'] = geo_edf['hh_size'].map(hh_size_dict)
 geo_edf.loc[:, 'next_veh_type_1'] = geo_edf['next_veh_type_1'].map(next_veh_dict)
@@ -292,3 +295,10 @@ def get_questions_dict():
     This is my personal `reference` for dataset
     '''
     return questions_dict
+
+
+def get_sp_dict():
+    '''
+    It returns the dictionary for stated preference
+    '''
+    return sp_dict
