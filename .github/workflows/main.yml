@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - main
+      - dev*
+
+jobs:
+  mssql_suite_job:
+    runs-on: ubuntu-latest
+    name: MSSQL Suite
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup MSSQL Suite
+        uses: potatoqualitee/mssqlsuite@v1.7
+        with:
+          install: # List of apps to install, e.g., "dbatools,dbachecks"
+          sa-password: # The sa password for the SQL instance
+          show-log: # Whether to show the log file for the docker container, true/false
+          collation: # Change the collation associated with the SQL Server instance, if needed
+          version: # The version of SQL Server to install in year format, e.g., "2019"
